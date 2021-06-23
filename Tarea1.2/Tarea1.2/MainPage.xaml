@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea1._2.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Formulario" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+
+            <Entry Placeholder="Nombre" PlaceholderColor="Gray" TextColor="Black" x:Name="txtnombre"/>
+            <Entry Placeholder="Apellido" PlaceholderColor="Gray" TextColor="Black" x:Name="txtapellido" />
+
+            <Entry Placeholder="Edad" PlaceholderColor="Gray"  TextColor="Black" x:Name="txtedad"/>
+            <Entry Placeholder="Correo" PlaceholderColor="Gray" TextColor="Black" x:Name="txtcorreo" />
+
+            <Button Text="Enviar"
+             
+                TextColor="black"
+                Clicked="enviar_Clicked"
+                BackgroundColor="Aqua"
+                BorderColor="black"
+                BorderWidth="1"
+                x:Name="btnSend"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
